@@ -3,7 +3,7 @@ from src.files import JSONVacancyStorage
 from src.abs_api import HHAPI
 
 def user_interface():
-    """Функция пользовательского интерфейса"""
+    '''Функция пользовательского интерфейса'''
     api = HHAPI()
     api.connect()
 
