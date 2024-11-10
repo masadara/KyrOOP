@@ -5,6 +5,7 @@ import os
 
 
 class VacancyStorage(ABC):
+    '''Абстрактный класс для сохранения'''
     @abstractmethod
     def save_vacancies(self, vacancies):
         pass
