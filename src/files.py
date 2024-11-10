@@ -4,7 +4,7 @@ from src.vacancy import Vacancy
 import os
 
 
-class VacancyStorage(ABC):
+class VacancySave(ABC):
     '''Абстрактный класс для сохранения'''
     @abstractmethod
     def save_vacancies(self, vacancies):
@@ -15,7 +15,7 @@ class VacancyStorage(ABC):
         pass
 
 
-class JSONVacancyStorage(VacancyStorage):
+class JSONVacancySave(VacancySave):
     '''Класс для сохранения в JSON'''
     def __init__(self, filename='vacancies.json'):
         self.directory = 'data'
