@@ -1,12 +1,12 @@
 import os
 import pytest
-from src.files import JSONVacancyStorage
+from src.files import JSONVacancySave
 from src.vacancy import Vacancy
 
 
 @pytest.fixture
 def storage():
-    storage_instance = JSONVacancyStorage()
+    storage_instance = JSONVacancySave()
     yield storage_instance
 
 

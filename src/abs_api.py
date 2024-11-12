@@ -3,6 +3,7 @@ import requests
 
 
 class AbstractHHAPI(ABC):
+    '''Абстрактный класс для API'''
     @abstractmethod
     def connect(self):
         pass

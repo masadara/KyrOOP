@@ -1,5 +1,5 @@
 from src.vacancy import Vacancy
-from src.files import JSONVacancyStorage
+from src.files import JSONVacancySave
 from src.abs_api import HHAPI
 
 def user_interface():
@@ -7,7 +7,7 @@ def user_interface():
     api = HHAPI()
     api.connect()
 
-    storage = JSONVacancyStorage()
+    storage = JSONVacancySave()
 
     while True:
         print("1. Найти вакансии")
